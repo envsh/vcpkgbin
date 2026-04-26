@@ -13,7 +13,7 @@
 # define __attribute__(a)
 #endif
 
-#if 1
+#ifdef SODIUM_STATIC
 # define SODIUM_EXPORT
 # define SODIUM_EXPORT_WEAK
 #else

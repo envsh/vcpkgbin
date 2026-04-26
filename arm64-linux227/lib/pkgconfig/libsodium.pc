@@ -1,12 +1,12 @@
-prefix=${pcfiledir}/../..
+prefix=/opt/vcpkg/installed/arm64-linux227
 exec_prefix=${prefix}
-libdir=${prefix}/lib
+libdir=${exec_prefix}/lib
 includedir=${prefix}/include
 
 Name: libsodium
-Version: 1.0.21
+Version: 1.0.22
 Description: A modern and easy-to-use crypto library
 
-
-Libs: "-L${libdir}" -lsodium -lpthread -pthread
-Cflags: "-I${includedir}"
+Libs: -L${libdir} -lsodium
+Libs.private: -lpthread -pthread 
+Cflags: -I${includedir}

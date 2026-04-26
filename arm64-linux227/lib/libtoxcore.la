@@ -5,19 +5,19 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname=''
+dlname='libtoxcore.so.2'
 
 # Names of this library.
-library_names=''
+library_names='libtoxcore.so.2.22.0 libtoxcore.so.2 libtoxcore.so'
 
 # The name of the static archive.
-old_library='libtoxcore.a'
+old_library=''
 
 # Linker flags that cannot go in dependency_libs.
 inherited_linker_flags=' -pthread'
 
 # Libraries that this one depends upon.
-dependency_libs=' -lm -lrt -L/opt/vcpkg/installed/arm64-linux227/lib/pkgconfig/../../lib -lsodium -lpthread'
+dependency_libs=' -lm -lrt -L/opt/vcpkg/installed/arm64-linux227/lib /opt/vcpkg/installed/arm64-linux227/lib/libsodium.la -lpthread'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

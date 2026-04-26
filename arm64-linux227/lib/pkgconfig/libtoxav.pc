@@ -7,5 +7,5 @@ Name: libtoxav
 Description: Tox A/V library
 Requires: libtoxcore
 Version: 0.2.22
-Libs: -L${libdir} -ltoxav -L/opt/vcpkg/installed/arm64-linux227/lib/pkgconfig/../../lib -lopus -lm -L/opt/vcpkg/installed/arm64-linux227/lib/pkgconfig/../../lib -lvpx -lm -lpthread
+Libs: -L${libdir} -ltoxav -L/opt/vcpkg/installed/arm64-linux227/lib -lopus -L/opt/vcpkg/installed/arm64-linux227/lib -lvpx -lm
 Cflags: -I${includedir}

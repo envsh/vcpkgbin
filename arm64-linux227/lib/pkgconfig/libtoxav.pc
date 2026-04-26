@@ -1,0 +1,11 @@
+prefix=/opt/vcpkg/installed/arm64-linux227
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libtoxav
+Description: Tox A/V library
+Requires: libtoxcore
+Version: 0.2.22
+Libs: -L${libdir} -ltoxav -L/opt/vcpkg/installed/arm64-linux227/lib/pkgconfig/../../lib -lopus -lm -L/opt/vcpkg/installed/arm64-linux227/lib/pkgconfig/../../lib -lvpx -lm -lpthread
+Cflags: -I${includedir}
